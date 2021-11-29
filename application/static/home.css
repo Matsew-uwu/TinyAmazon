@@ -13,6 +13,10 @@ div.sample {
     margin-right: 25%;
 }
 
+div.sample img {
+    padding: .3em;
+}
+
 #main {
     margin-top: 5em;
 }
