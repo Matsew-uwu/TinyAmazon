@@ -1,5 +1,5 @@
 import click 
-from app import app, db
+from .app import app, db
 
 @app.cli.command()
 @click.argument('filename')
@@ -11,7 +11,7 @@ def loaddb(filename):
     
     # chargement de notre jeu de données
     import yaml
-    books = yaml.load(open(filename))
+    books = yaml.load(open(filename), Loader=yaml.CLoader)
     
     # import des modèles
     from .models import Author, Book
@@ -24,7 +24,7 @@ def loaddb(filename):
             o = Author(name=a)
             db.session.add(o)
             authors[a] = o
-            db.session.commit()
+    db.session.commit()
     
     # deuxième passe: création de tous les livres
     for b in books:
@@ -35,4 +35,4 @@ def loaddb(filename):
         img = b["img"] ,
         author_id = a.id)
         db.session.add(o)
-        db.session.commit()
+    db.session.commit()
