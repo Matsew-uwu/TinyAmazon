@@ -35,8 +35,9 @@ def get_books():
     return Book.query.all()
 
 
-# def get_authors():
-#     Author.query().order_by(Author.name.desc()).all()
+def get_authors():
+    # Author.query().order_by(Author.name.desc()).all()
+    return Author.query.all()
 
 # def get_books_of_author(id):
 #     return Book.query.filter(
