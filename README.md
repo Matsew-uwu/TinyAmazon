@@ -13,5 +13,5 @@ pip install pyyaml
 pip install flask-bootstrap4
 pip install flask-sqlalchemy
 ```
-> A virtual environnement is set but there's some issues depending on your OS
+> A virtual environnement is set but there are some issues depending on what OS your are
 
