@@ -3,7 +3,7 @@
 > A tiny Amazon-like Web application made with Flask and Bootstrap
 
 ### Requirement 
-You have to install these modules to run the application
+You have to install these modules to run the application.
 You can copy/paste these commands
 
 ```txt
