@@ -12,6 +12,7 @@ pip install python-dotenv
 pip install pyyaml
 pip install flask-bootstrap4
 pip install flask-sqlalchemy
+pip install flask-wtf
 ```
 > A virtual environnement is set but there are some issues depending on what OS your are
 
