@@ -1,3 +1,4 @@
+from typing import AsyncContextManager
 import yaml, os.path
 from .app import data, db 
 
@@ -36,10 +37,13 @@ def get_books():
 
 
 def get_authors():
-    # Author.query().order_by(Author.name.desc()).all()
-    return Author.query.all()
+    return Author.query.order_by(Author.name.asc()).all()
+
+def get_author(id):
+    return Author.query.filter(Author.id == id).first()
 
 # def get_books_of_author(id):
 #     return Book.query.filter(
 #         Book.author_id == id
 #     ).all()
+

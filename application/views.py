@@ -1,6 +1,6 @@
 from .app import app
 from flask import render_template
-from .models import get_sample, get_authors, get_books
+from .models import get_sample, get_authors, get_books, get_author
 
 from flask_wtf import FlaskForm
 from wtforms import StringField , HiddenField
