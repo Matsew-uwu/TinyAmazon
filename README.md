@@ -18,5 +18,7 @@ pip install flask-wtf
 
 ### Launch Application 
 Go inside the application and run the following command
-> flask run
+```txt
+flask run
+```
 
