@@ -16,3 +16,7 @@ pip install flask-wtf
 ```
 > A virtual environnement is set but there are some issues depending on what OS your are
 
+### Launch Application 
+Go inside the application and run the following command
+> flask run
+
